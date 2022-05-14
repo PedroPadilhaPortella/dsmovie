@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "7ee32c06-c7a6-4115-a9ed-a2d2a09e6260",
+		"name": "DSMovies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies?size=10&page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Score",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\": 3,\r\n    \"email\": \"ana@gmail.com\",\r\n    \"score\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/scores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movies Heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pedro-kadjin-dsmovie.herokuapp.com/movies",
+					"protocol": "https",
+					"host": [
+						"pedro-kadjin-dsmovie",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Movie Heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pedro-kadjin-dsmovie.herokuapp.com/movies/1",
+					"protocol": "https",
+					"host": [
+						"pedro-kadjin-dsmovie",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Score Heroku",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"movieId\": 3,\r\n    \"email\": \"ana@gmail.com\",\r\n    \"score\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://pedro-kadjin-dsmovie.herokuapp.com/scores",
+					"protocol": "https",
+					"host": [
+						"pedro-kadjin-dsmovie",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"scores"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
